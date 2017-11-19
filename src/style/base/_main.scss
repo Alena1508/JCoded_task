@@ -32,6 +32,9 @@ body {
     }
     &.--active{
       transform:translatex(-250px);
+      @media screen and (max-width: 500px){
+        transform: translatex(-150px);
+      }
       &:after{
         background: rgba(0,0,0,.8);
       }

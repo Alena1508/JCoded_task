@@ -424,6 +424,9 @@ body {
       transition-duration: 0.2s; }
     body .content.--active {
       transform: translatex(-250px); }
+      @media screen and (max-width: 500px) {
+        body .content.--active {
+          transform: translatex(-150px); } }
       body .content.--active:after {
         background: rgba(0, 0, 0, 0.8); }
 
@@ -2793,6 +2796,11 @@ body {
   padding: 30px;
   transform: translatex(250px);
   transition-duration: 0.4s; }
+  @media screen and (max-width: 500px) {
+    .navigationMobile {
+      transform: translatex(150px);
+      padding: 85px 20px 0;
+      width: 150px; } }
   .navigationMobile.--active {
     transform: translatex(0); }
     .navigationMobile.--active .navigationMobile__item {

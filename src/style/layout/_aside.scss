@@ -14,6 +14,12 @@ $total-items: 6;
   padding: 30px;
   transform: translatex(250px);
   transition-duration: 0.4s;
+
+  @media screen and (max-width: 500px){
+    transform: translatex(150px);
+    padding: 85px 20px 0;
+    width: 150px;
+  }
   &.--active {
     transform: translatex(0);
     .navigationMobile__item{
