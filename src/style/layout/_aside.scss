@@ -1,0 +1,70 @@
+$total-items: 6;
+
+.navigationMobile{
+  position:fixed;
+  top:0;
+  bottom:0;
+  right: 0;
+  z-index: 10;
+  width:250px;
+  background: $d-blue;
+  color:#FFF;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 30px;
+  transform: translatex(250px);
+  transition-duration: 0.4s;
+  &.--active {
+    transform: translatex(0);
+    .navigationMobile__item{
+      animation: fadeIn 0.5s linear;
+      animation-fill-mode: both;
+      @for $i from 1 through $total-items {
+        &:nth-child(#{$i}) {
+          animation-delay: .08s * $i;
+        }
+      }
+    }
+  }
+  &__list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  &__item{
+    margin-bottom: 15px;
+    position: relative;
+  }
+  &__link{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  &__closeBtn{
+    color: #cca576;
+    font: 20px/100% arial, sans-serif;
+    position: fixed;
+    right: 30px;
+    text-decoration: none;
+    top: 30px;
+    cursor: pointer;
+  }
+}
+
+
+// Set delay per List Item
+
+// Keyframe animation
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    left: 100px;
+  }
+  75% {
+    opacity: 0.5;
+    left: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

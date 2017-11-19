@@ -1,0 +1,50 @@
+.reviews {
+  background: $l-grey;
+  padding:120px 0 115px;
+  &__title {
+    font: 24px/24px "Raleway", sans-serif;
+    color: $font-color;
+    text-transform: uppercase;
+    text-align: center;
+    &:after {
+      content: '';
+      display: block;
+      width: 77px;
+      height: 2px;
+      background: $font-color;
+      margin: 23px auto 0;
+    }
+  }
+  &__slide {
+    &:focus {
+      outline: none;
+    }
+  }
+  &__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:65px auto 30px;
+  }
+  &__content {
+    font: 14px/24px "Open Sans", sans-serif;
+    font-weight: 300;
+    color: $font-color;
+    text-align: center;
+    margin: 0 auto 37px;
+    width: 75%;
+  }
+  &__name {
+    font: 16px/16px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: $yellow;
+    text-align: center;
+  }
+  &__position {
+    font: 14px/16px "Open Sans", sans-serif;
+    text-align: center;
+    color: $font-color;
+    margin-top: 15px;
+  }
+}

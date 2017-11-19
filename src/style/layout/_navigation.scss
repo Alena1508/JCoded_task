@@ -1,0 +1,40 @@
+.navigation {
+  @media screen and (max-width: 1024px){
+    display: none;
+  }
+  &__list {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    position: relative;
+  }
+  &__link {
+    display: block;
+    padding:37px 0;
+    margin-left: 60px;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    &:hover {
+      &:after {
+        display: block;
+      }
+    }
+    &:after {
+      display: none;
+      content: '';
+      position: absolute;
+      left: -10px;
+      bottom: 0;
+      width: calc(100% + 20px);
+      height: 2px;
+      background: $yellow;
+    }
+  }
+}

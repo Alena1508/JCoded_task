@@ -1,0 +1,39 @@
+.copyright {
+  background: $d-blue;
+  padding:15px 0;
+  &__container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  &__date {
+    font: 12px/12px "Open Sans", sans-serif;
+    color: #6e7279;
+  }
+  &__soc {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+  }
+  &__link {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #6e7279;
+    color: #6e7279;
+    text-decoration: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin:0 5px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background: $yellow;
+      color: $white;
+      border: 1px solid $yellow;
+    }
+  }
+}

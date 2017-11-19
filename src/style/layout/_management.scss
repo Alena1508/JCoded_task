@@ -1,0 +1,43 @@
+.management {
+  padding:150px 0 30px;
+  &__title {
+    font: 24px/24px "Raleway", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: $font-color;
+    &:after {
+      content: '';
+      width: 76px;
+      height: 2px;
+      display: block;
+      margin: 30px auto 34px;
+      background: $yellow;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content:space-between;
+    align-items: stretch;
+    @media screen and (max-width: 1024px){
+      flex-wrap: wrap;
+      justify-content:space-around;
+    }
+  }
+  &__btn {
+    display: block;
+    width: 164px;
+    height: 48px;
+    border: 1px solid $font-color;
+    border-radius: 20px;
+    margin: 43px auto 0;
+    background: none;
+    font: 16px/16px "Open Sans", sans-serif;
+    color: $font-color;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+}

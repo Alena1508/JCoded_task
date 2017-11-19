@@ -1,0 +1,21 @@
+@import "base/normalize";
+@import "base/variables";
+@import "base/fonts";
+@import "base/main";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+
+@import "layout/header";
+@import "layout/aside";
+@import "layout/navigation";
+@import "layout/about";
+@import "layout/management";
+@import "layout/manager";
+@import "layout/reviews";
+@import "layout/footer";
+@import "layout/copyright";
+
+
+@import "vendors/slick";
+@import "vendors/slick-theme";
+

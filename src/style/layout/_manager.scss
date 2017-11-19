@@ -1,0 +1,43 @@
+.manager {
+  @media screen and (max-width: 1400px){
+    margin-bottom: 40px;
+  }
+  &__content {
+    padding:23px 12px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  &__name {
+    font: 16px/16px "Raleway", sans-serif;
+    font-weight: 500;
+    color: #232323;
+    text-transform: uppercase;
+  }
+  &__position {
+    font: 14px/16px "Open Sans", sans-serif;
+    color: $yellow;
+    margin-top: 5px;
+  }
+  &__soc {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  &__icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background: $grey;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin:0 3px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background: $d-blue;
+  z-index: 5;
+  height: 88px;
+  &__container {
+    width: 1390px;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    @media screen and (max-width: 1400px){
+      width: 95%;
+      margin:0 auto;
+    }
+  }
+  &__burger{
+    width: 45px;
+    height: 45px;
+    display: none;
+    @media screen and (max-width: 1024px){
+      display: block;
+    }
+  }
+}
